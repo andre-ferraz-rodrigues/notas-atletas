@@ -20,12 +20,12 @@ let atletas = [
   function calcularNotas(atletas) {
     for (let i = 0; i < atletas.length; i++) {
       let atleta = atletas[i];
-      let notas = atleta.notas.slice(); // copia para não alterar o original
+      let notas = atleta.notas.slice(); 
       let notasOrdenadas = notas.sort(function(a, b) {
         return a - b;
       });
   
-      let notasValidas = notasOrdenadas.slice(1, 4); // elimina a menor e a maior
+      let notasValidas = notasOrdenadas.slice(1, 4); 
       let soma = 0;
   
       notasValidas.forEach(function(nota) {
